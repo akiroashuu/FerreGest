@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Paleta de FerreGest (propuesta A + C). Solo tema claro. */
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --color-fondo: #f6f7f9;
+  --color-superficie: #ffffff;
+  --color-borde: #e3e6eb;
+  --color-borde-fuerte: #c5cad3;
+  --color-texto: #111827;
+  --color-texto-suave: #374151;
+  --color-tenue: #5b6472;
+
+  --color-marca: #1d4ed8;
+  --color-marca-oscura: #1e3a8a;
+  --color-marca-suave: #e8efff;
+
+  --color-aviso-fondo: #fdecc8;
+  --color-aviso-texto: #7a4a00;
+  --color-error-fondo: #fde8e8;
+  --color-error-texto: #9b1c1c;
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-size: 15px;
+}
+
+/* Foco visible y consistente para quien navega con teclado. */
+:focus-visible {
+  outline: 2px solid var(--color-marca);
+  outline-offset: 2px;
+}
